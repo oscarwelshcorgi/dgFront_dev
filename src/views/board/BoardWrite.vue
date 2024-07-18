@@ -1,6 +1,16 @@
 <template>
   <div class="container mt-5">
     <form @submit.prevent="submitPost" class="mt-3">
+
+      <div class="form-group">
+        <label for="board">게시판 선택:</label>
+        <select id="board" v-model="post.boardCode" class="form-control" required>
+          <option value="">게시판 선택</option>
+          <option value="customer">고객센터</option>
+          <option value="humor">유머게시판</option>
+        </select>
+      </div>
+
       <div class="form-group">
         <input type="text" id="title" v-model="post.title" required maxlength="100" class="form-control" style="font-size: 30px; font-weight: bold;" placeholder="제목을 입력해주세요.">
       </div>
@@ -26,7 +36,9 @@ export default {
       post: {
         id: null,
         title: '',
-        content: ''
+        content: '',
+        boardCode: '',
+        deleteYn:''
       }
     };
   },
@@ -94,7 +106,7 @@ export default {
 
           if (postId) {
             this.$router.push({
-              path: '/board/boardDetail',
+              path: '/board/boardList',
               query: this.requestBody
             }); // 저장된 게시글 상세 페이지로 이동
           } else {
@@ -112,8 +124,8 @@ export default {
 
         this.$axios.get(apiUrl)
           .then(response => {
-            const { id, title, content } = response.data;
-            this.post = { id, title, content };
+            const { id, title, content, boardCode, deleteYn } = response.data;
+            this.post = { id, title, content, boardCode, deleteYn };
 
             // Quill 에디터의 내용도 초기화된 데이터로 설정(수정 시 content 가져오기)
             if (this.quill) {
