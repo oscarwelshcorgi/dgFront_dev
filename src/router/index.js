@@ -41,7 +41,8 @@ const routes = [
 
 const router = createRouter({
     history : createWebHistory(),
-    routes
+    routes,
+    mode:'history',
 });
 
 // 라우트 변경 시 페이지 제목 설정
