@@ -6,8 +6,9 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">ㅎㅎㅎㅎㅎㅎ</h1>
-        <p class="lead text-muted">투자에 대한 책임은 본인에게 .</p>
+        <h1 class="fw-light">동까유머</h1>
+        <p class="lead text-muted">에펨, 펨코, 팸코, fmkorea, fm, 디시, 디시인사이드, dc, dcinside, 커뮤, 커뮤니티, 오유, 오늘의유머, 웃대, 웃긴대학, 짱공유, 고급유머, 깨글, 개그, gag, 9gag, 레딧, radit  -동까유머
+        , 동까 유머, 동까우머, 동가유머, 동까유머, 동까 우머, 재미있는 각종 유머글 모음 사이트, 유머 사이트 추천, 심심할 때,유머 모음, 재밌는 글, 유머 게시판, 아프라카, 인터넷 방송, 뉴스, bj, 축구, 스타, 게임, 예능, 티비, tv, 야구, mlb, 음식, 먹방 -동까유머</p>
       </div>
     </div>
   </section>
@@ -25,7 +26,7 @@
             </svg>
 
             <div class="card-body">
-              <p class="card-text">2024 증권사 리포트 요약본</p>
+              <p class="card-text">1등 유머 사이트!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">읽어보기</button>

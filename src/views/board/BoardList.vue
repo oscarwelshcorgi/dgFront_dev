@@ -175,11 +175,14 @@ export default {
         path: './boardDetail',
         query: this.requestBody
       });
+
       // 페이지 맨 위로 스크롤
       window.scrollTo({
         top: 0,
         behavior: 'smooth' // 부드럽게 스크롤
       });
+
+
     }
   }
 }

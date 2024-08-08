@@ -51,4 +51,13 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
+router.beforeEach((to, from, next) => {
+  if (to.path === '/ads.txt' || to.path === '/sitemap.xml' || to.path === '/robots.txt') {
+    // '/ads.txt', '/sitemap.xml', '/robots.txt' 경로일 경우 처리하지 않음
+    return next(false);
+  }
+  // 다른 모든 경우에는 다음 단계로 진행
+  next();
+});
+
 export default router
